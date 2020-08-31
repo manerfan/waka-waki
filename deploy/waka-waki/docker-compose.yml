@@ -1,0 +1,63 @@
+version: "3"
+
+networks: 
+  outer-link:
+
+services: 
+
+  ### 数据库
+
+  mysql: 
+    image: mysql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    env_file: 
+      - .env
+      - ./config/mysql/.env
+    volumes: 
+      # sql初始化
+      - ./config/mysql/initdb.d/:/docker-entrypoint-initdb.d/
+      # - ./data/mysql/:/var/lib/mysql/
+    expose: 
+      - 3306
+    networks:
+      - default
+      - outer-link 
+    restart: always
+
+  ### nacos 注册中心
+
+  nacos1:
+    hostname: nacos1
+    image: nacos/nacos-server
+    env_file: 
+      - .env
+      - ./config/nacos/.env
+    volumes:
+      - ./data/nacos/nacos1/logs/:/home/nacos/logs/
+      - ./config/nacos/nacos.custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - "8848:8848"
+    networks:
+      default:
+        aliases:
+          - "nacos"
+    depends_on:
+      - mysql
+
+  nacos2:
+    hostname: nacos2
+    image: nacos/nacos-server
+    env_file: 
+      - .env
+      - ./config/nacos/.env
+    volumes:
+      - ./data/nacos/nacos2/logs/:/home/nacos/logs/
+      - ./config/nacos/nacos.custom.properties:/home/nacos/init.d/custom.properties
+    expose:
+      - "8848"
+    networks:
+      default:
+        aliases:
+          - "nacos"
+    depends_on:
+      - mysql
