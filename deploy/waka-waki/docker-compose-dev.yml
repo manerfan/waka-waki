@@ -1,0 +1,58 @@
+version: "3"
+
+networks:
+  outer-link:
+
+services: 
+
+  ### 数据库
+
+  mysql: 
+    image: mysql
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    env_file: 
+      - .env
+      - ./config/mysql/.env
+    volumes: 
+      # sql初始化
+      - ./config/mysql/initdb.d/:/docker-entrypoint-initdb.d/
+    ports:
+      - '3306:3306'
+    networks:
+      - default
+      - outer-link
+
+  ### 缓存
+
+  redis:
+    image: redis
+    command: --requirepass "${REDIS_SERVICE_PASSWORD}"
+    ports:
+      - "6379:6379"
+    networks:
+      - default
+      - outer-link
+
+  ### nginx 充当 dns + cdn
+  dns.cdn:
+    image: nginx
+    volumes:
+      - ./config/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./deployment/waka-waki-pages/:/usr/share/nginx/html/
+    ports:
+      - "80:80"
+
+  ### nacos 注册中心
+
+  nacos:
+    hostname: nacos
+    image: nacos/nacos-server
+    env_file: 
+      - .env
+      - ./config/nacos/.dev.env
+    volumes:
+      - ./config/nacos/nacos.custom.properties:/home/nacos/init.d/custom.properties
+    ports:
+      - '8848:8848'
+    depends_on:
+      - mysql

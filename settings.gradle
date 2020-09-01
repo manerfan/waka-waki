@@ -11,7 +11,7 @@ rootProject.name = 'waka-waki'
 
 // 所有子目录中的gradle文件
 FileTree candidateFiles = fileTree(rootDir) {
-    include "**/*.gradle"
+    include '**/*.gradle'
     exclude '**/gradle', 'settings.gradle', '/build.gradle'
 }
 
@@ -25,4 +25,3 @@ candidateFiles.each { File candidateFile ->
         print "detect module ${module}"
     }
 }
-
