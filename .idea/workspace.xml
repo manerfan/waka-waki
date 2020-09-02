@@ -4,47 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/config/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/config/nacos/.dev.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/config/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/deployment/waka-waki-pages/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/docker-compose-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle-6.4-bin.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/classes/com.manerfan.waka.waki.gateway.WakaWakiGatewayApplicationTests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/reports/tests/test/packages/com.manerfan.waka.waki.gateway.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/resources/main/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/resources/main/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/test-results/test/TEST-com.manerfan.waka.waki.gateway.WakaWakiGatewayApplicationTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-gateway/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-gateway/src/main/java/com/manerfan/waka/waki/gateway/WakaWakiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/java/com/manerfan/waka/waki/gateway/WakaWakiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-schedule/waka-waki-schedule-server/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
