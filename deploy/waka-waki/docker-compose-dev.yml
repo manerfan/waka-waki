@@ -56,3 +56,21 @@ services:
       - '8848:8848'
     depends_on:
       - mysql
+
+  ### gateway
+
+  gateway:
+    build:
+      context: ./deployment
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: ${GATEWAY_SERVICE}
+    env_file:
+      - .env
+    environment:
+      SERVICE_NAME: ${GATEWAY_SERVICE}
+    volumes:
+      - ./data/gateway/logs/:/var/logs/waka-waki-gateway/
+    depends_on:
+      - nacos
+    restart: on-failure:3

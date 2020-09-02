@@ -3,8 +3,42 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="" />
+    <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/data/gateway/logs/.logs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/deployment/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/deployment/waka-waki-pages/.waka-waki-pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/deployment/waka-waki-services/docker-startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/config/default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/config/mysql/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/config/mysql/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/config/nacos/.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/config/nacos/.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/config/nacos/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/config/nacos/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/docker-compose-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +64,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="waka-waki" type="f1a62948:ProjectNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="waka-waki" type="f1a62948:ProjectNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="waka-waki" type="f1a62948:ProjectNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -75,7 +127,7 @@
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="add_unversioned_files" value="true" />
+    <property name="add_unversioned_files" value="true&#10;/Users/manerfan/project/learning/github/waka-waki/deploy/waka-waki/deployment/docker-startup.sh" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
@@ -93,16 +145,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
-      <recent name="$PROJECT_DIR$/waka-waki-schedule" />
-      <recent name="$PROJECT_DIR$/waka-waki-auth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
       <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nacos" />
       <recent name="$PROJECT_DIR$/deploy/waka-waki" />
       <recent name="$PROJECT_DIR$/waka-waki-gateway/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy/waka-waki/deployment/waka-waki-services" />
+      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
+      <recent name="$PROJECT_DIR$/waka-waki-schedule" />
+      <recent name="$PROJECT_DIR$/waka-waki-auth" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -123,6 +176,44 @@
     </option>
   </component>
   <component name="RunManager" selected="Docker.waka-waki">
+    <configuration name="waka-waki:waka-waki-gateway [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/waka-waki-gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="waka-waki:waka-waki-gateway [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/waka-waki-gateway" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WakaWakiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="waka-waki.waka-waki-gateway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.manerfan.waka.waki.gateway.WakaWakiGatewayApplication" />
@@ -138,6 +229,7 @@
     <configuration name="waka-waki-dev" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="commandLineOptions" value="--build" />
           <option name="sourceFilePath" value="deploy/waka-waki/docker-compose-dev.yml" />
         </settings>
       </deployment>
@@ -146,33 +238,24 @@
     <configuration name="waka-waki" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="removeVolumesOnComposeDown" value="true" />
+          <option name="commandLineOptions" value="--build" />
           <option name="sourceFilePath" value="deploy/waka-waki/docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="waka-waki/docker-compose-dev.yml.dns.cdn: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="dns.cdn" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="deploy/waka-waki/docker-compose-dev.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.waka-waki" />
       <item itemvalue="Docker.waka-waki-dev" />
+      <item itemvalue="Docker.waka-waki" />
+      <item itemvalue="Gradle.waka-waki:waka-waki-gateway [bootJar]" />
+      <item itemvalue="Gradle.waka-waki:waka-waki-gateway [clean]" />
       <item itemvalue="Spring Boot.WakaWakiGatewayApplication" />
-      <item itemvalue="Docker.waka-waki/docker-compose-dev.yml.dns.cdn: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.waka-waki/docker-compose-dev.yml.dns.cdn: Compose Deployment" />
+        <item itemvalue="Gradle.waka-waki:waka-waki-gateway [clean]" />
+        <item itemvalue="Gradle.waka-waki:waka-waki-gateway [bootJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +269,18 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="220" y="24" key="#Plugins" timestamp="1598966527931">
       <screen x="0" y="23" width="1440" height="877" />
@@ -195,42 +290,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="549" y="321" key="#Port_bindings/0.23.1440.877@0.23.1440.877" timestamp="1598977207400" />
-    <state x="0" y="56" width="1440" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598892414320">
+    <state x="0" y="56" width="1440" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599052517953">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="56" width="1440" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1598892414320" />
-    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598967082539">
+    <state x="0" y="56" width="1440" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599052517953" />
+    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599026710934">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1598967082539" />
+    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599026710934" />
     <state x="392" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598967002108">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="392" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1598967002108" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1598975198678">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1599045275429">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1598975198678" />
-    <state width="1386" height="330" key="GridCell.Tab.0.bottom" timestamp="1598941792920">
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1599045275429" />
+    <state width="1386" height="197" key="GridCell.Tab.0.bottom" timestamp="1599050494828">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1386" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1598941792920" />
-    <state width="1386" height="330" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1598931331133" />
-    <state width="1386" height="330" key="GridCell.Tab.0.center" timestamp="1598941792919">
+    <state width="1386" height="154" key="GridCell.Tab.0.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599039967533" />
+    <state width="1386" height="197" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599050494828" />
+    <state width="1386" height="197" key="GridCell.Tab.0.center" timestamp="1599050494827">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1386" height="330" key="GridCell.Tab.0.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1598941792919" />
-    <state width="1386" height="330" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1598931331131" />
-    <state width="1386" height="330" key="GridCell.Tab.0.left" timestamp="1598941792919">
+    <state width="1386" height="154" key="GridCell.Tab.0.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599039967532" />
+    <state width="1386" height="197" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599050494827" />
+    <state width="1386" height="197" key="GridCell.Tab.0.left" timestamp="1599050494827">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1386" height="330" key="GridCell.Tab.0.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1598941792919" />
-    <state width="1386" height="330" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1598931331131" />
-    <state width="1386" height="330" key="GridCell.Tab.0.right" timestamp="1598941792920">
+    <state width="1386" height="154" key="GridCell.Tab.0.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599039967531" />
+    <state width="1386" height="197" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599050494827" />
+    <state width="1386" height="197" key="GridCell.Tab.0.right" timestamp="1599050494828">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1386" height="330" key="GridCell.Tab.0.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1598941792920" />
-    <state width="1386" height="330" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1598931331132" />
+    <state width="1386" height="154" key="GridCell.Tab.0.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599039967533" />
+    <state width="1386" height="197" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599050494828" />
     <state x="181" y="141" key="IDE.errors.dialog" timestamp="1598925167622">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -240,6 +335,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="80" y="23" width="1321" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1598966780282" />
+    <state x="563" y="360" key="VCS.ChangelistChooser" timestamp="1599011519900">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="563" y="360" key="VCS.ChangelistChooser/0.23.1440.877@0.23.1440.877" timestamp="1599011519900" />
+    <state x="339" y="133" width="761" height="656" key="find.popup" timestamp="1599011768698">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="339" y="133" width="761" height="656" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599011768698" />
     <state x="0" y="23" key="new project wizard" timestamp="1598924809192">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -22,5 +22,5 @@ logging:
     root: error
     org.springframework: warn
   file:
-    name: waka.waki.gateway.log
-    path: /var/log/waka.waki/gateway
+    name: application.log
+    path: /var/logs/waka-waki-gateway

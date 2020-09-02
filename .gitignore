@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+*.log*
 
 # BlueJ files
 *.ctxt
@@ -36,3 +37,4 @@ hs_err_pid*
 .gradle/
 
 deploy/waka-waki/data/
+deploy/waka-waki/deployment/
