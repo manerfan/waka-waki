@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/waka-waki-auth" />
             <option value="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server" />
+            <option value="$PROJECT_DIR$/waka-waki-common" />
             <option value="$PROJECT_DIR$/waka-waki-gateway" />
             <option value="$PROJECT_DIR$/waka-waki-schedule" />
             <option value="$PROJECT_DIR$/waka-waki-schedule/waka-waki-schedule-server" />

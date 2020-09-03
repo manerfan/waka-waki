@@ -3,7 +3,7 @@
 set -x
 
 JAVA_OPT="-server -Xms${JVM_XMS} -Xmx${JVM_XMX} -Xmn${JVM_XMN}"
-JAVA_OPT="${JAVA_OPT} -jar /opt/application.jar"
+JAVA_OPT="${JAVA_OPT} -jar -Dspring.profiles.active=prod /opt/application.jar"
 JAVA_OPT="${JAVA_OPT} ${JAVA_OPT_EXT}"
 
 mkdir -p /var/logs/${SERVICE_NAME}

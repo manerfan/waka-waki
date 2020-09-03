@@ -22,6 +22,6 @@ candidateFiles.each { File candidateFile ->
         String buildFilePath = candidateFile.parentFile.absolutePath
         String module = buildFilePath.replace(rootDirPath, '').replaceAll(File.separator, ':')
         include module
-        print "detect module ${module}"
+        println "detect module ${module}"
     }
 }

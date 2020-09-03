@@ -13,7 +13,7 @@ plugins {
 
 idea {
     project {
-        languageLevel = "11"
+        languageLevel = JavaVersion.VERSION_11
     }
     module {
         downloadJavadoc = true
@@ -23,18 +23,24 @@ idea {
 
 description = 'Waka Waki'
 
+Set<Project> boosterProjects = subprojects.findAll {it.name ==~ /.*-common/ }
+
 configure(subprojects) {
-    apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
     apply plugin: 'java'
     apply plugin: 'java-library'
 
     group = 'com.manerfan.waka'
-    sourceCompatibility = '11'
-    targetCompatibility = '11'
-    
     version = '0.0.1-SNAPSHOT'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+
+        withSourcesJar()
+        // withJavadocJar()
+    }
 
     repositories {
         mavenLocal()
@@ -49,6 +55,8 @@ configure(subprojects) {
     ext {
         set('springCloudAlibabaVersion', "2.2.1.RELEASE")
         set('springCloudVersion', "Hoxton.SR8")
+        set('jupiterVersion', '5.6.2')
+        set('assertjVersion', '3.17.1')
     }
 
     dependencyManagement {
@@ -59,10 +67,13 @@ configure(subprojects) {
     }
 
     dependencies {
-        implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
-        implementation 'org.springframework.boot:spring-boot-starter-actuator'
-        implementation 'org.springframework.boot:spring-boot-starter-logging'
-        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+        testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
+        // JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API
+        testImplementation "org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}"
+        // JUnit Jupiter Engine to depend on the JUnit4 engine and JUnit 4 API
+        testImplementation "org.junit.vintage:junit-vintage-engine:${jupiterVersion}"
+
+        testImplementation "org.assertj:assertj-core:${assertjVersion}"
     }
 
     [compileJava, javadoc, compileTestJava]*.options*.encoding = 'UTF-8'
@@ -70,12 +81,25 @@ configure(subprojects) {
     test {
         useJUnitPlatform()
     }
+}
+
+// 单独配置 services
+configure(subprojects - boosterProjects) {
+    apply plugin: 'org.springframework.boot'
+
+    dependencies {
+        implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        implementation 'org.springframework.boot:spring-boot-starter-logging'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    }
 
     // 构建完成后将runable jar复制到deployment中
     task copyBootJar(type: Copy) {
         from 'build/libs'
         include "${project.getName()}-${project.getVersion()}.jar"
-        into "../deploy/waka-waki/deployment/waka-waki-services"
+
+        into '../deploy/waka-waki/deployment/waka-waki-services'
         rename "${project.getName()}-${project.getVersion()}.jar", "${project.getName()}.jar"
     }
     bootJar.finalizedBy(copyBootJar)
