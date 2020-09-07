@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar" />
+        </processorPath>
+        <module name="waka-waki.waka-waki-schedule.waka-waki-schedule-server.main" />
+        <module name="waka-waki.waka-waki-auth.waka-waki-auth-server.main" />
+        <module name="waka-waki.waka-waki-schedule.waka-waki-schedule-server.test" />
+        <module name="waka-waki.waka-waki-gateway.main" />
+        <module name="waka-waki.waka-waki-auth.waka-waki-auth-server.test" />
+        <module name="waka-waki.waka-waki-gateway.test" />
+        <module name="waka-waki.waka-waki-common.test" />
+        <module name="waka-waki.waka-waki-common.main" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel target="11" />
   </component>
 </project>

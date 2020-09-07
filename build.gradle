@@ -23,13 +23,23 @@ idea {
 
 description = 'Waka Waki'
 
-Set<Project> boosterProjects = subprojects.findAll {it.name ==~ /.*-common/ }
+// 寻找包含构建脚本的模块(文件夹)
+Set<Project> realSubProjects = subprojects.findAll {it.buildFile.exists() }
+// 寻找工具/接口模块
+Set<Project> boosterProjects = realSubProjects.findAll {it.name ==~ /.*-(common|api)/ }
+// 计算服务模块
+Set<Project> serviceProjects = realSubProjects - boosterProjects
 
-configure(subprojects) {
+println "Real Sub Projects \n${realSubProjects}"
+println "Booster Projects \n${boosterProjects}"
+println "Service Projects \n${serviceProjects}"
+
+configure(realSubProjects) {
     apply plugin: 'io.spring.dependency-management'
 
     apply plugin: 'java'
     apply plugin: 'java-library'
+    apply plugin: 'application'
 
     group = 'com.manerfan.waka'
     version = '0.0.1-SNAPSHOT'
@@ -37,6 +47,8 @@ configure(subprojects) {
     java {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
+        modularity.inferModulePath = true
 
         withSourcesJar()
         // withJavadocJar()
@@ -56,7 +68,12 @@ configure(subprojects) {
         set('springCloudAlibabaVersion', "2.2.1.RELEASE")
         set('springCloudVersion', "Hoxton.SR8")
         set('jupiterVersion', '5.6.2')
-        set('assertjVersion', '3.17.1')
+        set('assertjVersion', '3.17.0')
+        set('lombokVersion', '1.18.12')
+        set('commonsLangVersion', '3.11')
+        set('vavrVersion', '0.10.3')
+        set('slf4jVersion', '1.7.30')
+        set('logbackVersion', '1.2.3')
     }
 
     dependencyManagement {
@@ -67,6 +84,18 @@ configure(subprojects) {
     }
 
     dependencies {
+        compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
+        compile "io.vavr:vavr:${vavrVersion}"
+
+        implementation "org.slf4j:slf4j-api:${slf4jVersion}"
+        implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+
+        compileOnly "org.projectlombok:lombok:${lombokVersion}"
+        annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+        testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+        testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
         testImplementation "org.junit.jupiter:junit-jupiter-api:${jupiterVersion}"
         // JUnit Jupiter Engine to depend on the JUnit5 engine and JUnit 5 API
         testImplementation "org.junit.jupiter:junit-jupiter-engine:${jupiterVersion}"
@@ -84,7 +113,7 @@ configure(subprojects) {
 }
 
 // 单独配置 services
-configure(subprojects - boosterProjects) {
+configure(serviceProjects) {
     apply plugin: 'org.springframework.boot'
 
     dependencies {
