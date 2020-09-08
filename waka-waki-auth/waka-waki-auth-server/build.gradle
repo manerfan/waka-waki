@@ -1,4 +1,9 @@
 dependencies {
-    project ':waka-waki-common'
-}
+    implementation project(':waka-waki-common')
 
+    implementation "org.flywaydb:flyway-core"
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'mysql:mysql-connector-java'
+}

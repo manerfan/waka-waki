@@ -71,6 +71,7 @@ configure(realSubProjects) {
         set('assertjVersion', '3.17.0')
         set('lombokVersion', '1.18.12')
         set('commonsLangVersion', '3.11')
+        set('commonsCollectionVersion', '4.4')
         set('vavrVersion', '0.10.3')
         set('slf4jVersion', '1.7.30')
         set('logbackVersion', '1.2.3')
@@ -84,8 +85,10 @@ configure(realSubProjects) {
     }
 
     dependencies {
-        compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
-        compile "io.vavr:vavr:${vavrVersion}"
+        api "org.apache.commons:commons-lang3:${commonsLangVersion}"
+        api "org.apache.commons:commons-collections4:${commonsCollectionVersion}"
+
+        api "io.vavr:vavr:${vavrVersion}"
 
         implementation "org.slf4j:slf4j-api:${slf4jVersion}"
         implementation "ch.qos.logback:logback-classic:${logbackVersion}"

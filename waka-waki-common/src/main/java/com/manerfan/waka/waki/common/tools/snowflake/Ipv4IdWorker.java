@@ -158,8 +158,4 @@ public class Ipv4IdWorker implements IdGenerator {
             )
         ).getOrElse(Optional.empty());
     }
-
-    public static void main(String[] args) {
-        IntStream.rangeClosed(0, IPV4_SEG_LEN - 1).forEach(System.out::println);
-    }
 }

@@ -35,7 +35,7 @@ public class IdData {
 
     private static final Random RANDOM = new Random();
     private static final String[] RANDOM_CHARS = IntStream.concat(
-        IntStream.rangeClosed(0, 9), IntStream.rangeClosed('a', 'z'))
+        IntStream.rangeClosed('0', '9'), IntStream.rangeClosed('a', 'z'))
         .mapToObj(c -> String.valueOf((char)c))
         .collect(Collectors.toList())
         .toArray(new String[] {});

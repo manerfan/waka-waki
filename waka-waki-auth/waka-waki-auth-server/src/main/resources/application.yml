@@ -1,0 +1,12 @@
+server:
+  port: 8011
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: ${MYSQL_SERVICE_USER:waka-waki}
+    password: ${MYSQL_SERVICE_PASSWORD:waka-waki}
+    url: jdbc:mysql://${MYSQL_SERVICE_HOST:mysql}:${MYSQL_SERVICE_PORT:3306}/waki_auth?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: none

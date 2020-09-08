@@ -23,19 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4WorkerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/WorkerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-common/src/test/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorkerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2169cbe2-8f18-4761-b59c-57f07db580ee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2169cbe2-8f18-4761-b59c-57f07db580ee/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/config/mysql/initdb.d/auth.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/WakaWakiAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/ReactiveSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/component/role/RoleReadComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/component/user/UserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/component/user/UserReadComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/common/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/role/model/UserRoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/role/model/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/role/repository/UserRoleMapperRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/role/repository/UserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/user/model/UserAuthEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/user/model/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/user/model/UserIdentityType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/user/repository/UserAuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/dao/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/db/migration/V1_1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdData.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-common/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-common/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-common/src/test/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-common/src/test/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorkerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +84,15 @@
         <task path="$PROJECT_DIR$/waka-waki-auth">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/waka-waki-schedule">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/waka-waki-schedule/waka-waki-schedule-server">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -80,13 +108,23 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
-                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
+                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
-                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
+                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="waka-waki" type="f1a62948:ProjectNode" />
+                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
+                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -100,6 +138,7 @@
       <list>
         <option value="HTML File" />
         <option value="module-info" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -131,6 +170,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -148,7 +188,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.176628" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -188,7 +228,21 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Ipv4IdWorkerTest">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WakaWakiAuthApplication">
+    <configuration name="ReactiveSecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.manerfan.waka.waki.auth.configuration.ReactiveSecurityConfig" />
+      <module name="waka-waki.waka-waki-auth.waka-waki-auth-server.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ipv4IdWorkerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,10 +281,24 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="WakaWakiAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="waka-waki.waka-waki-auth.waka-waki-auth-server.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.manerfan.waka.waki.auth.WakaWakiAuthApplication" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WakaWakiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="waka-waki.waka-waki-gateway.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.manerfan.waka.waki.gateway.WakaWakiGatewayApplication" />
       <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ACTIVE_PROFILES" value="dev" />
       <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -261,14 +329,17 @@
     <list>
       <item itemvalue="Docker.waka-waki-dev" />
       <item itemvalue="Docker.waka-waki" />
+      <item itemvalue="Spring Boot.WakaWakiAuthApplication" />
       <item itemvalue="Spring Boot.WakaWakiGatewayApplication" />
       <item itemvalue="Gradle.Ipv4IdWorkerTest" />
       <item itemvalue="Gradle.Ipv4IdWorkerTest.simplePerformanceTest" />
+      <item itemvalue="Application.ReactiveSecurityConfig" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Ipv4IdWorkerTest" />
+        <item itemvalue="Application.ReactiveSecurityConfig" />
         <item itemvalue="Gradle.Ipv4IdWorkerTest.simplePerformanceTest" />
+        <item itemvalue="Gradle.Ipv4IdWorkerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +366,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="600" y="279" width="693" height="364" key="#Assign_Data_Sources" timestamp="1599564187596">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="600" y="279" width="693" height="364" key="#Assign_Data_Sources/0.23.1440.877@0.23.1440.877" timestamp="1599564187596" />
+    <state x="350" y="133" key="#Inspections" timestamp="1599564199588">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="350" y="133" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1599564199588" />
     <state x="220" y="24" key="#Plugins" timestamp="1598966527931">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -303,20 +382,28 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="549" y="321" key="#Port_bindings/0.23.1440.877@0.23.1440.877" timestamp="1598977207400" />
-    <state x="0" y="23" width="1440" height="877" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599468162769">
+    <state x="0" y="65" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599561986908">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" width="1440" height="877" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468162769" />
-    <state x="0" y="56" width="1440" height="811" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599052517953" />
+    <state x="0" y="65" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599561986908" />
     <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599052911922">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599052911922" />
-    <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1599464434125">
+    <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1599567927131">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599464434125" />
-    <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1599444220147" />
+    <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1599567927131" />
+    <state x="206" y="223" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599533881622">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="206" y="223" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1599533881622" />
+    <state x="0" y="379" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599563421617">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="0" y="379" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.877@0.23.1440.877" timestamp="1599563421617" />
     <state x="137" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599465301853">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -333,73 +420,88 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1599045275429" />
-    <state width="534" height="761" key="DebuggerActiveHint" timestamp="1599468264329">
+    <state width="534" height="761" key="DebuggerActiveHint" timestamp="1599562557403">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="534" height="761" key="DebuggerActiveHint/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468264329" />
-    <state width="1386" height="266" key="GridCell.Tab.0.bottom" timestamp="1599469250597">
+    <state width="534" height="761" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1599562557403" />
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1599565375358">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599471145459" />
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1599565375358" />
+    <state width="1190" height="492" key="GridCell.Tab.0.bottom" timestamp="1599570932791">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="266" key="GridCell.Tab.0.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599469250597" />
-    <state width="1386" height="278" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599125462525" />
-    <state width="1386" height="266" key="GridCell.Tab.0.center" timestamp="1599469250595">
+    <state width="1190" height="492" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599570932791" />
+    <state width="1190" height="492" key="GridCell.Tab.0.center" timestamp="1599570932791">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="266" key="GridCell.Tab.0.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599469250595" />
-    <state width="1386" height="278" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599125462524" />
-    <state width="1386" height="266" key="GridCell.Tab.0.left" timestamp="1599469250595">
+    <state width="1190" height="492" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599570932791" />
+    <state width="1190" height="492" key="GridCell.Tab.0.left" timestamp="1599570932790">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="266" key="GridCell.Tab.0.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599469250595" />
-    <state width="1386" height="278" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599125462523" />
-    <state width="1386" height="266" key="GridCell.Tab.0.right" timestamp="1599469250596">
+    <state width="1190" height="492" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599570932790" />
+    <state width="1190" height="492" key="GridCell.Tab.0.right" timestamp="1599570932791">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="266" key="GridCell.Tab.0.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599469250596" />
-    <state width="1386" height="278" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599125462524" />
-    <state width="1386" height="285" key="GridCell.Tab.1.bottom" timestamp="1599468382799">
+    <state width="1190" height="492" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599570932791" />
+    <state width="1190" height="492" key="GridCell.Tab.1.bottom" timestamp="1599570932790">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468382799" />
-    <state width="1386" height="285" key="GridCell.Tab.1.center" timestamp="1599468382798">
+    <state width="1190" height="492" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599570932790" />
+    <state width="1190" height="492" key="GridCell.Tab.1.center" timestamp="1599570932789">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="285" key="GridCell.Tab.1.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468382798" />
-    <state width="1386" height="285" key="GridCell.Tab.1.left" timestamp="1599468382797">
+    <state width="1190" height="492" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1599570932789" />
+    <state width="1190" height="492" key="GridCell.Tab.1.left" timestamp="1599570932788">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="285" key="GridCell.Tab.1.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468382797" />
-    <state width="1386" height="285" key="GridCell.Tab.1.right" timestamp="1599468382798">
+    <state width="1190" height="492" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1599570932788" />
+    <state width="1190" height="492" key="GridCell.Tab.1.right" timestamp="1599570932789">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1386" height="285" key="GridCell.Tab.1.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599468382798" />
+    <state width="1190" height="492" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1599570932789" />
     <state x="181" y="141" key="IDE.errors.dialog" timestamp="1599218778813">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="181" y="141" key="IDE.errors.dialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599218778813" />
     <state x="181" y="141" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1598888834931" />
-    <state x="80" y="23" width="1156" height="877" key="SettingsEditor" timestamp="1599220319466">
+    <state x="80" y="23" width="1156" height="877" key="SettingsEditor" timestamp="1599555301239">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="80" y="23" width="1156" height="877" key="SettingsEditor/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599220319466" />
-    <state x="80" y="23" width="1321" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1598966780282" />
-    <state x="382" y="138" width="759" height="665" key="StructurePopup" timestamp="1599467254908">
+    <state x="80" y="23" width="1321" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1599555301239" />
+    <state x="382" y="138" width="759" height="665" key="StructurePopup" timestamp="1599548208803">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599467254908" />
-    <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1599443526942" />
+    <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1599548208803" />
     <state x="563" y="360" key="VCS.ChangelistChooser" timestamp="1599011519900">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="563" y="360" key="VCS.ChangelistChooser/0.23.1440.877@0.23.1440.877" timestamp="1599011519900" />
+    <state x="321" y="104" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1599564920479">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="321" y="104" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1440.877@0.23.1440.877" timestamp="1599564920479" />
     <state x="125" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599467626222">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="125" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599467626222" />
-    <state x="339" y="133" width="761" height="656" key="find.popup" timestamp="1599011768698">
+    <state x="339" y="133" width="761" height="656" key="find.popup" timestamp="1599565042095">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="339" y="133" width="761" height="656" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599011768698" />
+    <state x="339" y="133" width="894" height="656" key="find.popup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599472288217" />
+    <state x="339" y="133" width="761" height="656" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599565042095" />
     <state x="0" y="23" key="new project wizard" timestamp="1599121791552">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -409,24 +511,27 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="301" y="207" width="838" height="1032" key="run.anything.popup/0.23.1440.877@0.23.1440.877" timestamp="1598888068044" />
-    <state x="301" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1599462599402">
+    <state x="301" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1599570503474">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="301" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599462599402" />
-    <state x="301" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1599392454076" />
+    <state x="301" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1599570503474" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/Ipv4IdWorker.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="3" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/ReactiveSecurityConfig.java</url>
+          <line>37</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake/IdData.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/support/component/user/UserReadComponent.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

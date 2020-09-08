@@ -50,5 +50,10 @@ public class Ipv4IdWorkerTest {
         long end = System.currentTimeMillis();
 
         System.out.printf("=== Run %d times, total cost %dms, tps: %fms ===", 50000, end - start, (end - start) / 50000.0);
+
+        count = 100;
+        while (count-- > 0) {
+            System.out.println(Ipv4IdWorker.singleInstance().nextId().toHex());
+        }
     }
 }
