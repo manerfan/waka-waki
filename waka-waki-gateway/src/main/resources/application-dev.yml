@@ -6,11 +6,3 @@ spring:
       discovery:
         enabled: true
         server-addr: localhost:8848
-    gateway:
-      routes:
-        - id: route_nacos
-          uri: https://www.baidu.com
-          predicates:
-            - Path=/baidu/**
-          filters:
-            - StripPrefix=1

@@ -5,6 +5,15 @@ spring:
     nacos:
       discovery:
         server-addr: ${NACOS_SERVICE_HOST:nacos}:${NACOS_SERVICE_PORT:8848}
+    gateway:
+      routes:
+        - id: route_auth_server
+          uri: lb://${AUTH_SERVICE:waka-waki-auth-server}
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+            - PreserveHostHeader
 
 server:
   port: 8000

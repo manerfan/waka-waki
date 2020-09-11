@@ -1,9 +1,12 @@
 dependencies {
     implementation project(':waka-waki-common')
 
-    implementation "org.flywaydb:flyway-core"
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'mysql:mysql-connector-java'
+    implementation "org.flywaydb:flyway-core"
 }
