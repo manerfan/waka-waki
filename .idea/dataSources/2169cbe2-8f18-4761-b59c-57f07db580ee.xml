@@ -880,5 +880,839 @@
 ALL PRIVILEGES|waki_auth:null!
 </ObjectGrants>
     </user>
+    <table id="278" parent="3" name="config_info">
+      <Comment>config_info</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="279" parent="3" name="config_info_aggr">
+      <Comment>å¢žåŠ ç§Ÿæˆ·å­—æ®µ</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="280" parent="3" name="config_info_beta">
+      <Comment>config_info_beta</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="281" parent="3" name="config_info_tag">
+      <Comment>config_info_tag</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="282" parent="3" name="config_tags_relation">
+      <Comment>config_tag_relation</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="283" parent="3" name="group_capacity">
+      <Comment>é›†ç¾¤ã€&#x81;å&#x90;„Groupå®¹é‡&#x8f;ä¿¡æ&#x81;¯è¡¨</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="284" parent="3" name="his_config_info">
+      <Comment>å¤šç§Ÿæˆ·æ”¹é€ </Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="285" parent="3" name="permissions"/>
+    <table id="286" parent="3" name="roles"/>
+    <table id="287" parent="3" name="tenant_capacity">
+      <Comment>ç§Ÿæˆ·å®¹é‡&#x8f;ä¿¡æ&#x81;¯è¡¨</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="288" parent="3" name="tenant_info">
+      <Comment>tenant_info</Comment>
+      <Collation>utf8_bin</Collation>
+    </table>
+    <table id="289" parent="3" name="users"/>
+    <column id="290" parent="278" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="291" parent="278" name="data_id">
+      <Position>2</Position>
+      <Comment>data_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="292" parent="278" name="group_id">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="293" parent="278" name="content">
+      <Position>4</Position>
+      <Comment>content</Comment>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="294" parent="278" name="md5">
+      <Position>5</Position>
+      <Comment>md5</Comment>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <column id="295" parent="278" name="gmt_create">
+      <Position>6</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="296" parent="278" name="gmt_modified">
+      <Position>7</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="297" parent="278" name="src_user">
+      <Position>8</Position>
+      <Comment>source user</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="298" parent="278" name="src_ip">
+      <Position>9</Position>
+      <Comment>source ip</Comment>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="299" parent="278" name="app_name">
+      <Position>10</Position>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="300" parent="278" name="tenant_id">
+      <Position>11</Position>
+      <Comment>ç§Ÿæˆ·å­—æ®µ</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="301" parent="278" name="c_desc">
+      <Position>12</Position>
+      <DataType>varchar(256)|0s</DataType>
+    </column>
+    <column id="302" parent="278" name="c_use">
+      <Position>13</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <column id="303" parent="278" name="effect">
+      <Position>14</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <column id="304" parent="278" name="type">
+      <Position>15</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <column id="305" parent="278" name="c_schema">
+      <Position>16</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <index id="306" parent="278" name="uk_configinfo_datagrouptenant">
+      <ColNames>data_id
+group_id
+tenant_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="307" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="308" parent="278" name="uk_configinfo_datagrouptenant">
+      <ColNames>data_id
+group_id
+tenant_id</ColNames>
+      <UnderlyingIndexName>uk_configinfo_datagrouptenant</UnderlyingIndexName>
+    </key>
+    <column id="309" parent="279" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="310" parent="279" name="data_id">
+      <Position>2</Position>
+      <Comment>data_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="311" parent="279" name="group_id">
+      <Position>3</Position>
+      <Comment>group_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="312" parent="279" name="datum_id">
+      <Position>4</Position>
+      <Comment>datum_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="313" parent="279" name="content">
+      <Position>5</Position>
+      <Comment>å†…å®¹</Comment>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="314" parent="279" name="gmt_modified">
+      <Position>6</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="315" parent="279" name="app_name">
+      <Position>7</Position>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="316" parent="279" name="tenant_id">
+      <Position>8</Position>
+      <Comment>ç§Ÿæˆ·å­—æ®µ</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="317" parent="279" name="uk_configinfoaggr_datagrouptenantdatum">
+      <ColNames>data_id
+group_id
+tenant_id
+datum_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="318" parent="279" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="319" parent="279" name="uk_configinfoaggr_datagrouptenantdatum">
+      <ColNames>data_id
+group_id
+tenant_id
+datum_id</ColNames>
+      <UnderlyingIndexName>uk_configinfoaggr_datagrouptenantdatum</UnderlyingIndexName>
+    </key>
+    <column id="320" parent="280" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="321" parent="280" name="data_id">
+      <Position>2</Position>
+      <Comment>data_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="322" parent="280" name="group_id">
+      <Position>3</Position>
+      <Comment>group_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="323" parent="280" name="app_name">
+      <Position>4</Position>
+      <Comment>app_name</Comment>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="324" parent="280" name="content">
+      <Position>5</Position>
+      <Comment>content</Comment>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="325" parent="280" name="beta_ips">
+      <Position>6</Position>
+      <Comment>betaIps</Comment>
+      <DataType>varchar(1024)|0s</DataType>
+    </column>
+    <column id="326" parent="280" name="md5">
+      <Position>7</Position>
+      <Comment>md5</Comment>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <column id="327" parent="280" name="gmt_create">
+      <Position>8</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="328" parent="280" name="gmt_modified">
+      <Position>9</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="329" parent="280" name="src_user">
+      <Position>10</Position>
+      <Comment>source user</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="330" parent="280" name="src_ip">
+      <Position>11</Position>
+      <Comment>source ip</Comment>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="331" parent="280" name="tenant_id">
+      <Position>12</Position>
+      <Comment>ç§Ÿæˆ·å­—æ®µ</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="332" parent="280" name="uk_configinfobeta_datagrouptenant">
+      <ColNames>data_id
+group_id
+tenant_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="333" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="334" parent="280" name="uk_configinfobeta_datagrouptenant">
+      <ColNames>data_id
+group_id
+tenant_id</ColNames>
+      <UnderlyingIndexName>uk_configinfobeta_datagrouptenant</UnderlyingIndexName>
+    </key>
+    <column id="335" parent="281" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="336" parent="281" name="data_id">
+      <Position>2</Position>
+      <Comment>data_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="337" parent="281" name="group_id">
+      <Position>3</Position>
+      <Comment>group_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="338" parent="281" name="tenant_id">
+      <Position>4</Position>
+      <Comment>tenant_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="339" parent="281" name="tag_id">
+      <Position>5</Position>
+      <Comment>tag_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="340" parent="281" name="app_name">
+      <Position>6</Position>
+      <Comment>app_name</Comment>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="341" parent="281" name="content">
+      <Position>7</Position>
+      <Comment>content</Comment>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="342" parent="281" name="md5">
+      <Position>8</Position>
+      <Comment>md5</Comment>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <column id="343" parent="281" name="gmt_create">
+      <Position>9</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="344" parent="281" name="gmt_modified">
+      <Position>10</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="345" parent="281" name="src_user">
+      <Position>11</Position>
+      <Comment>source user</Comment>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="346" parent="281" name="src_ip">
+      <Position>12</Position>
+      <Comment>source ip</Comment>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <index id="347" parent="281" name="uk_configinfotag_datagrouptenanttag">
+      <ColNames>data_id
+group_id
+tenant_id
+tag_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="348" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="349" parent="281" name="uk_configinfotag_datagrouptenanttag">
+      <ColNames>data_id
+group_id
+tenant_id
+tag_id</ColNames>
+      <UnderlyingIndexName>uk_configinfotag_datagrouptenanttag</UnderlyingIndexName>
+    </key>
+    <column id="350" parent="282" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="351" parent="282" name="tag_name">
+      <Position>2</Position>
+      <Comment>tag_name</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="352" parent="282" name="tag_type">
+      <Position>3</Position>
+      <Comment>tag_type</Comment>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <column id="353" parent="282" name="data_id">
+      <Position>4</Position>
+      <Comment>data_id</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="282" name="group_id">
+      <Position>5</Position>
+      <Comment>group_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="282" name="tenant_id">
+      <Position>6</Position>
+      <Comment>tenant_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="356" parent="282" name="nid">
+      <Position>7</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <index id="357" parent="282" name="uk_configtagrelation_configidtag">
+      <ColNames>id
+tag_name
+tag_type</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="358" parent="282" name="idx_tenant_id">
+      <ColNames>tenant_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="359" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>nid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="360" parent="282" name="uk_configtagrelation_configidtag">
+      <ColNames>id
+tag_name
+tag_type</ColNames>
+      <UnderlyingIndexName>uk_configtagrelation_configidtag</UnderlyingIndexName>
+    </key>
+    <column id="361" parent="283" name="id">
+      <Position>1</Position>
+      <Comment>ä¸»é”®ID</Comment>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="362" parent="283" name="group_id">
+      <Position>2</Position>
+      <Comment>Group IDï¼Œç©ºå­—ç¬¦è¡¨ç¤ºæ•´ä¸ªé›†ç¾¤</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="363" parent="283" name="quota">
+      <Position>3</Position>
+      <Comment>é…&#x8d;é¢&#x9d;ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="364" parent="283" name="usage">
+      <Position>4</Position>
+      <Comment>ä½¿ç”¨é‡&#x8f;</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="365" parent="283" name="max_size">
+      <Position>5</Position>
+      <Comment>å&#x8d;•ä¸ªé…&#x8d;ç½®å¤§å°&#x8f;ä¸Šé™&#x90;ï¼Œå&#x8d;•ä½&#x8d;ä¸ºå­—èŠ‚ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="366" parent="283" name="max_aggr_count">
+      <Position>6</Position>
+      <Comment>è&#x81;šå&#x90;ˆå­&#x90;é…&#x8d;ç½®æœ€å¤§ä¸ªæ•°ï¼Œï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="367" parent="283" name="max_aggr_size">
+      <Position>7</Position>
+      <Comment>å&#x8d;•ä¸ªè&#x81;šå&#x90;ˆæ•°æ&#x8d;®çš„å­&#x90;é…&#x8d;ç½®å¤§å°&#x8f;ä¸Šé™&#x90;ï¼Œå&#x8d;•ä½&#x8d;ä¸ºå­—èŠ‚ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="368" parent="283" name="max_history_count">
+      <Position>8</Position>
+      <Comment>æœ€å¤§å&#x8f;˜æ›´åŽ†å&#x8f;²æ•°é‡&#x8f;</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="369" parent="283" name="gmt_create">
+      <Position>9</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="370" parent="283" name="gmt_modified">
+      <Position>10</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="371" parent="283" name="uk_group_id">
+      <ColNames>group_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="372" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="373" parent="283" name="uk_group_id">
+      <ColNames>group_id</ColNames>
+      <UnderlyingIndexName>uk_group_id</UnderlyingIndexName>
+    </key>
+    <column id="374" parent="284" name="id">
+      <Position>1</Position>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="375" parent="284" name="nid">
+      <Position>2</Position>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="376" parent="284" name="data_id">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="377" parent="284" name="group_id">
+      <Position>4</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="378" parent="284" name="app_name">
+      <Position>5</Position>
+      <Comment>app_name</Comment>
+      <DataType>varchar(128)|0s</DataType>
+    </column>
+    <column id="379" parent="284" name="content">
+      <Position>6</Position>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="380" parent="284" name="md5">
+      <Position>7</Position>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <column id="381" parent="284" name="gmt_create">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="382" parent="284" name="gmt_modified">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="383" parent="284" name="src_user">
+      <Position>10</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="384" parent="284" name="src_ip">
+      <Position>11</Position>
+      <DataType>varchar(20)|0s</DataType>
+    </column>
+    <column id="385" parent="284" name="op_type">
+      <Position>12</Position>
+      <DataType>char(10)|0s</DataType>
+    </column>
+    <column id="386" parent="284" name="tenant_id">
+      <Position>13</Position>
+      <Comment>ç§Ÿæˆ·å­—æ®µ</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="387" parent="284" name="idx_did">
+      <ColNames>data_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="388" parent="284" name="idx_gmt_create">
+      <ColNames>gmt_create</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="389" parent="284" name="idx_gmt_modified">
+      <ColNames>gmt_modified</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="390" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>nid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="391" parent="285" name="role">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="392" parent="285" name="resource">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="393" parent="285" name="action">
+      <Position>3</Position>
+      <DataType>varchar(8)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="394" parent="285" name="uk_role_permission">
+      <ColNames>role
+resource
+action</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="395" parent="285" name="uk_role_permission">
+      <ColNames>role
+resource
+action</ColNames>
+      <UnderlyingIndexName>uk_role_permission</UnderlyingIndexName>
+    </key>
+    <column id="396" parent="286" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="397" parent="286" name="role">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="398" parent="286" name="idx_user_role">
+      <ColNames>username
+role</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="399" parent="286" name="idx_user_role">
+      <ColNames>username
+role</ColNames>
+      <UnderlyingIndexName>idx_user_role</UnderlyingIndexName>
+    </key>
+    <column id="400" parent="287" name="id">
+      <Position>1</Position>
+      <Comment>ä¸»é”®ID</Comment>
+      <DataType>bigint unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="401" parent="287" name="tenant_id">
+      <Position>2</Position>
+      <Comment>Tenant ID</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="402" parent="287" name="quota">
+      <Position>3</Position>
+      <Comment>é…&#x8d;é¢&#x9d;ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="403" parent="287" name="usage">
+      <Position>4</Position>
+      <Comment>ä½¿ç”¨é‡&#x8f;</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="404" parent="287" name="max_size">
+      <Position>5</Position>
+      <Comment>å&#x8d;•ä¸ªé…&#x8d;ç½®å¤§å°&#x8f;ä¸Šé™&#x90;ï¼Œå&#x8d;•ä½&#x8d;ä¸ºå­—èŠ‚ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="405" parent="287" name="max_aggr_count">
+      <Position>6</Position>
+      <Comment>è&#x81;šå&#x90;ˆå­&#x90;é…&#x8d;ç½®æœ€å¤§ä¸ªæ•°</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="406" parent="287" name="max_aggr_size">
+      <Position>7</Position>
+      <Comment>å&#x8d;•ä¸ªè&#x81;šå&#x90;ˆæ•°æ&#x8d;®çš„å­&#x90;é…&#x8d;ç½®å¤§å°&#x8f;ä¸Šé™&#x90;ï¼Œå&#x8d;•ä½&#x8d;ä¸ºå­—èŠ‚ï¼Œ0è¡¨ç¤ºä½¿ç”¨é»˜è®¤å€¼</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="407" parent="287" name="max_history_count">
+      <Position>8</Position>
+      <Comment>æœ€å¤§å&#x8f;˜æ›´åŽ†å&#x8f;²æ•°é‡&#x8f;</Comment>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="408" parent="287" name="gmt_create">
+      <Position>9</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="409" parent="287" name="gmt_modified">
+      <Position>10</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="410" parent="287" name="uk_tenant_id">
+      <ColNames>tenant_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="411" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="412" parent="287" name="uk_tenant_id">
+      <ColNames>tenant_id</ColNames>
+      <UnderlyingIndexName>uk_tenant_id</UnderlyingIndexName>
+    </key>
+    <column id="413" parent="288" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="414" parent="288" name="kp">
+      <Position>2</Position>
+      <Comment>kp</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="415" parent="288" name="tenant_id">
+      <Position>3</Position>
+      <Comment>tenant_id</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="416" parent="288" name="tenant_name">
+      <Position>4</Position>
+      <Comment>tenant_name</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="417" parent="288" name="tenant_desc">
+      <Position>5</Position>
+      <Comment>tenant_desc</Comment>
+      <DataType>varchar(256)|0s</DataType>
+    </column>
+    <column id="418" parent="288" name="create_source">
+      <Position>6</Position>
+      <Comment>create_source</Comment>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <column id="419" parent="288" name="gmt_create">
+      <Position>7</Position>
+      <Comment>åˆ›å»ºæ—¶é—´</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="420" parent="288" name="gmt_modified">
+      <Position>8</Position>
+      <Comment>ä¿®æ”¹æ—¶é—´</Comment>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="421" parent="288" name="uk_tenant_info_kptenantid">
+      <ColNames>kp
+tenant_id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="422" parent="288" name="idx_tenant_id">
+      <ColNames>tenant_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="423" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="424" parent="288" name="uk_tenant_info_kptenantid">
+      <ColNames>kp
+tenant_id</ColNames>
+      <UnderlyingIndexName>uk_tenant_info_kptenantid</UnderlyingIndexName>
+    </key>
+    <column id="425" parent="289" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="426" parent="289" name="password">
+      <Position>2</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="427" parent="289" name="enabled">
+      <Position>3</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="428" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

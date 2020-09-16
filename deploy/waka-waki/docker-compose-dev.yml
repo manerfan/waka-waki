@@ -75,3 +75,22 @@ services:
     depends_on:
       - nacos
     restart: on-failure:3
+
+  ### auth server
+
+  "auth-server":
+    build:
+      context: ./deployment
+      dockerfile: Dockerfile
+      args:
+        SERVICE_NAME: ${AUTH_SERVICE}
+    env_file:
+      - .env
+    environment:
+      SERVICE_NAME: ${AUTH_SERVICE}
+    volumes:
+      - ./data/auth.server/logs/:/var/logs/waka-waki-auth-server/
+      - ./config/auth.server/auth.server.custom.yml:/opt/config/application-prod.yml
+    depends_on:
+      - nacos
+    restart: on-failure:3

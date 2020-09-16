@@ -16,7 +16,14 @@ import org.springframework.web.reactive.function.client.WebClient;
 /**
  * OauthClientConfiguration
  *
- * <a href="https://www.keycloak.org/">oauth server keycloak</a>
+ * <pre>
+ * 如果需要SSO (Oauth Support)，可以参考
+ * <a href="https://www.keycloak.org/">keycloak</a>
+ * <a href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server">announcing-the-spring-authorization-server</a>
+ * 等方案建立Oauth Server
+ *
+ * Spring Security Oauth 不再计划支持 Auth Server
+ * <a href="https://spring.io/blog/2019/11/14/spring-security-oauth-2-0-roadmap-update">Spring Security Oauth 2.0 Roadmap</a>
  *
  * @author Maner.Fan
  * @date 2020/9/10
@@ -25,8 +32,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class OauthClientConfiguration {
     @Bean
     public ReactiveClientRegistrationRepository clientRegistrationRepo(
-        @Value("${security.oauth2.client.registration.github.client-id}") String clientId,
-        @Value("${security.oauth2.client.registration.github.client-secret}") String clientSecret
+        @Value("${security.oauth2.client.registration.github.client-id:YourGitHubClientId}") String clientId,
+        @Value("${security.oauth2.client.registration.github.client-secret:YourGitHubSecretId}") String clientSecret
     ) {
         ClientRegistration clientRegistration = ClientRegistration.withRegistrationId("github")
             .clientAuthenticationMethod(ClientAuthenticationMethod.POST)

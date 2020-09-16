@@ -134,7 +134,7 @@ configure(serviceProjects) {
         from 'build/libs'
         include "${project.getName()}-${project.getVersion()}.jar"
 
-        into '../deploy/waka-waki/deployment/waka-waki-services'
+        into "${rootProject.projectDir}/deploy/waka-waki/deployment/waka-waki-services"
         rename "${project.getName()}-${project.getVersion()}.jar", "${project.getName()}.jar"
     }
     bootJar.finalizedBy(copyBootJar)

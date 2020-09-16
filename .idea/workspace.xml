@@ -23,18 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79fcc95f-cec9-44bc-8a31-f39c2468adee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/oauth/OauthClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/web/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/data/nacos/nacos1/logs/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/waka-waki/data/nacos/nacos2/logs/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2169cbe2-8f18-4761-b59c-57f07db580ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2169cbe2-8f18-4761-b59c-57f07db580ee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/smartfox/common_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/waka-waki/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/config/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/config/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/ReactiveSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/security/ReactiveSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/data/gateway/logs/.logs" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/config/auth.server/auth.server.custom.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/data/mysql/.mysql" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/data/auth.server/logs/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/data/nacos/nacos1/logs/.logs" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/data/gateway/logs/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/data/nacos/nacos2/logs/.logs" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/data/mysql/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/waka-waki/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/waka-waki/docker-compose-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/oauth/OauthClientConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/java/com/manerfan/waka/waki/auth/configuration/oauth/OauthClientConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/waka-waki-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,44 +101,33 @@
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
                 <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
                 <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
                 <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
                 <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
-                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
-                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.2.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
-                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
-                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.2.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.springframework.security.oauth:spring-security-oauth2:2.3.4.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="waka-waki" type="f1a62948:ProjectNode" />
-                <item name="waka-waki-auth" type="2d1252cf:ModuleNode" />
-                <item name="waka-waki-auth-server" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.2.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-                <item name="org.springframework.security:spring-security-jwt:1.0.9.RELEASE" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+                <item name="waka-waki-gateway" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -188,7 +181,7 @@
     <property name="add_unversioned_files" value="true&#10;/Users/manerfan/project/learning/github/waka-waki/deploy/waka-waki/deployment/docker-startup.sh" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deploy/waka-waki/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -198,7 +191,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.176628" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="database.data.csv.formats" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -206,18 +199,19 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
-      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nacos" />
-      <recent name="$PROJECT_DIR$/deploy/waka-waki" />
-      <recent name="$PROJECT_DIR$/waka-waki-gateway/src/main/resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/waka-waki-common/src/main/java/com/manerfan/waka/waki/common/tools/snowflake" />
       <recent name="$PROJECT_DIR$/deploy/waka-waki/deployment/waka-waki-services" />
       <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
       <recent name="$PROJECT_DIR$/waka-waki-schedule" />
       <recent name="$PROJECT_DIR$/waka-waki-auth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy/waka-waki/config" />
+      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nginx" />
+      <recent name="$PROJECT_DIR$/deploy/waka-waki/config/nacos" />
+      <recent name="$PROJECT_DIR$/deploy/waka-waki" />
+      <recent name="$PROJECT_DIR$/waka-waki-gateway/src/main/resources" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -245,31 +239,62 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WakaWakiAuthApplication">
-    <configuration name="ReactiveSecurityConfiguration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.manerfan.waka.waki.auth.configuration.security.ReactiveSecurityConfiguration" />
-      <module name="waka-waki.waka-waki-auth.waka-waki-auth-server.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ipv4IdWorkerTest.simplePerformanceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.waka-waki:waka-waki-gateway [bootJar]">
+    <configuration name="waka-waki:waka-waki-auth [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/waka-waki-auth" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.manerfan.waka.waki.common.tools.snowflake.Ipv4IdWorkerTest.simplePerformanceTest&quot;" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":waka-waki-common:test" />
+            <option value="bootJar" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="waka-waki:waka-waki-auth [copyBootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/waka-waki-auth" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="copyBootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="waka-waki:waka-waki-auth:waka-waki-auth-server [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/waka-waki-auth/waka-waki-auth-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="waka-waki:waka-waki-auth:waka-waki-auth-server [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -319,6 +344,9 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <envs>
+        <env name="spring.cloud.nacos.server-addr" value="nacos:8848" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -355,37 +383,24 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="waka-waki/docker-compose-dev.yml.gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="gateway" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="deploy/waka-waki/docker-compose-dev.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Docker.waka-waki-dev" />
       <item itemvalue="Docker.waka-waki" />
-      <item itemvalue="Docker.waka-waki/docker-compose-dev.yml.gateway: Compose Deployment" />
-      <item itemvalue="Gradle.Ipv4IdWorkerTest.simplePerformanceTest" />
       <item itemvalue="Gradle.waka-waki:waka-waki-gateway [bootJar]" />
       <item itemvalue="Gradle.waka-waki:waka-waki-auth:waka-waki-auth-server [dependencies]" />
+      <item itemvalue="Gradle.waka-waki:waka-waki-auth [bootJar]" />
+      <item itemvalue="Gradle.waka-waki:waka-waki-auth [copyBootJar]" />
+      <item itemvalue="Gradle.waka-waki:waka-waki-auth:waka-waki-auth-server [bootJar]" />
       <item itemvalue="Spring Boot.WakaWakiAuthApplication" />
       <item itemvalue="Spring Boot.WakaWakiGatewayApplication" />
-      <item itemvalue="Application.ReactiveSecurityConfiguration" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.waka-waki:waka-waki-auth:waka-waki-auth-server [bootJar]" />
+        <item itemvalue="Gradle.waka-waki:waka-waki-auth [copyBootJar]" />
+        <item itemvalue="Gradle.waka-waki:waka-waki-auth [bootJar]" />
         <item itemvalue="Gradle.waka-waki:waka-waki-auth:waka-waki-auth-server [dependencies]" />
         <item itemvalue="Gradle.waka-waki:waka-waki-gateway [bootJar]" />
-        <item itemvalue="Docker.waka-waki/docker-compose-dev.yml.gateway: Compose Deployment" />
-        <item itemvalue="Application.ReactiveSecurityConfiguration" />
-        <item itemvalue="Gradle.Ipv4IdWorkerTest.simplePerformanceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -428,15 +443,15 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="549" y="321" key="#Port_bindings/0.23.1440.877@0.23.1440.877" timestamp="1598977207400" />
-    <state x="0" y="23" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599721182095">
+    <state x="0" y="65" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600226569879">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" width="1440" height="877" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599721182095" />
-    <state x="0" y="65" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1599561986908" />
-    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599052911922">
+    <state x="0" y="65" width="1440" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600226569879" />
+    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599813947321">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599052911922" />
+    <state x="311" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1599813947321" />
     <state x="333" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1599567927131">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -458,80 +473,80 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="392" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1598967002108" />
-    <state x="423" y="23" key="#xdebugger.evaluate" timestamp="1599731048090">
+    <state x="423" y="23" key="#xdebugger.evaluate" timestamp="1599818710260">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="423" y="23" key="#xdebugger.evaluate/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599731048090" />
-    <state x="423" y="23" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1599651226630" />
+    <state x="423" y="23" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1599818710260" />
     <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1599045275429">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1599045275429" />
-    <state width="777" height="761" key="DebuggerActiveHint" timestamp="1599745871684">
+    <state width="831" height="457" key="DebuggerActiveHint" timestamp="1599819163121">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="777" height="761" key="DebuggerActiveHint/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745871684" />
-    <state width="783" height="457" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1599620145229" />
+    <state width="831" height="457" key="DebuggerActiveHint/0.23.1440.877@0.23.1440.877" timestamp="1599819163121" />
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1599565375358">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599471145459" />
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1599565375358" />
-    <state width="1069" height="223" key="GridCell.Tab.0.bottom" timestamp="1599792417244">
+    <state width="924" height="180" key="GridCell.Tab.0.bottom" timestamp="1600226593643">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.0.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745831786" />
-    <state width="1069" height="223" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599792417244" />
-    <state width="1069" height="223" key="GridCell.Tab.0.center" timestamp="1599792417243">
+    <state width="924" height="180" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600226593643" />
+    <state width="924" height="180" key="GridCell.Tab.0.center" timestamp="1600226593643">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.0.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745831784" />
-    <state width="1069" height="223" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1599792417243" />
-    <state width="1069" height="223" key="GridCell.Tab.0.left" timestamp="1599792417243">
+    <state width="924" height="180" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600226593643" />
+    <state width="924" height="180" key="GridCell.Tab.0.left" timestamp="1600226593642">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.0.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745831784" />
-    <state width="1069" height="223" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1599792417243" />
-    <state width="1069" height="223" key="GridCell.Tab.0.right" timestamp="1599792417244">
+    <state width="924" height="180" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600226593642" />
+    <state width="924" height="180" key="GridCell.Tab.0.right" timestamp="1600226593643">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.0.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745831785" />
-    <state width="1069" height="223" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1599792417244" />
-    <state width="1069" height="223" key="GridCell.Tab.1.bottom" timestamp="1599792417242">
+    <state width="924" height="180" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600226593643" />
+    <state width="1211" height="542" key="GridCell.Tab.1.bottom" timestamp="1600052458782">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.1.bottom/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745668034" />
-    <state width="1069" height="223" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1599792417242" />
-    <state width="1069" height="223" key="GridCell.Tab.1.center" timestamp="1599792417241">
+    <state width="1211" height="542" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600052458782" />
+    <state width="1211" height="542" key="GridCell.Tab.1.center" timestamp="1600052458781">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.1.center/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745668032" />
-    <state width="1069" height="223" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1599792417241" />
-    <state width="1069" height="223" key="GridCell.Tab.1.left" timestamp="1599792417240">
+    <state width="1211" height="542" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1600052458781" />
+    <state width="1211" height="542" key="GridCell.Tab.1.left" timestamp="1600052458781">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.1.left/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745668031" />
-    <state width="1069" height="223" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1599792417240" />
-    <state width="1069" height="223" key="GridCell.Tab.1.right" timestamp="1599792417242">
+    <state width="1211" height="542" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1600052458781" />
+    <state width="1211" height="542" key="GridCell.Tab.1.right" timestamp="1600052458782">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1069" height="532" key="GridCell.Tab.1.right/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745668033" />
-    <state width="1069" height="223" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1599792417242" />
+    <state width="1211" height="542" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1600052458782" />
     <state x="181" y="141" key="IDE.errors.dialog" timestamp="1599705700718">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="181" y="141" key="IDE.errors.dialog/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599218778813" />
     <state x="181" y="141" key="IDE.errors.dialog/0.23.1440.877@0.23.1440.877" timestamp="1599705700718" />
-    <state x="80" y="23" width="1156" height="877" key="SettingsEditor" timestamp="1599555301239">
+    <state x="80" y="23" width="1156" height="877" key="SettingsEditor" timestamp="1600225993801">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="80" y="23" width="1156" height="877" key="SettingsEditor/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599220319466" />
-    <state x="80" y="23" width="1321" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1599555301239" />
-    <state x="382" y="138" width="759" height="665" key="StructurePopup" timestamp="1599745035062">
+    <state x="80" y="23" width="1321" height="877" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600225993801" />
+    <state x="382" y="138" width="759" height="665" key="StructurePopup" timestamp="1599818483809">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745035062" />
-    <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1599644755334" />
+    <state x="382" y="138" width="759" height="665" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1599818483809" />
     <state x="563" y="360" key="VCS.ChangelistChooser" timestamp="1599011519900">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -540,20 +555,24 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="720" height="438" key="XDebugger.FullValuePopup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599728692685" />
+    <state x="600" y="321" width="726" height="406" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1600225853662">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="600" y="321" width="726" height="406" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.1440.877@0.23.1440.877" timestamp="1600225853662" />
     <state x="321" y="104" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1599564920479">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="321" y="104" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1440.877@0.23.1440.877" timestamp="1599564920479" />
-    <state x="0" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599745799589">
+    <state x="0" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599816134677">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599745799589" />
-    <state x="6" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1599650866018" />
-    <state x="237" y="133" width="1203" height="692" key="find.popup" timestamp="1599734525875">
+    <state x="0" y="32" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1440.877@0.23.1440.877" timestamp="1599816134677" />
+    <state x="339" y="133" width="761" height="692" key="find.popup" timestamp="1599812980795">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="237" y="133" width="1203" height="692" key="find.popup/0.23.1440.877/-209.-1057.1920.1057@0.23.1440.877" timestamp="1599734525875" />
-    <state x="339" y="133" width="761" height="692" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599651390086" />
+    <state x="339" y="133" width="761" height="692" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1599812980795" />
     <state x="0" y="23" key="new project wizard" timestamp="1599121791552">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -733,12 +752,35 @@
           </properties>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config/2.2.1.RELEASE/d706aade075ce347efa0a0c33830b99a71cf4221/spring-cloud-starter-alibaba-nacos-config-2.2.1.RELEASE-sources.jar!/com/alibaba/cloud/nacos/NacosConfigProperties.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config/2.2.1.RELEASE/d706aade075ce347efa0a0c33830b99a71cf4221/spring-cloud-starter-alibaba-nacos-config-2.2.1.RELEASE-sources.jar!/com/alibaba/cloud/nacos/NacosConfigProperties.java</url>
+          <line>244</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config/2.2.1.RELEASE/d706aade075ce347efa0a0c33830b99a71cf4221/spring-cloud-starter-alibaba-nacos-config-2.2.1.RELEASE-sources.jar!/com/alibaba/cloud/nacos/NacosConfigProperties.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.core.env.MutablePropertySources" memberName="propertySourceList" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="ipv4Address()" language="JAVA" />
         <watch expression="ipv4ToLong(&quot;20.38.76.98&quot;)" language="JAVA" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="environment" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
